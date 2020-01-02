@@ -1,0 +1,45 @@
+<!Doctype html>
+<hmtl>
+<head>
+</head>
+<body>
+  var bodyX = 200;//issa lion rawr
+  var bodyY = 220;
+  var bodyW = 114;
+  var bodyH = 118;
+  var faceW = bodyW/2.2;
+  var eyesW = faceW/4.9;
+  var eyesH = eyesW;
+
+
+  draw = function() {
+      background(207, 254, 255);
+
+      fill(255, 148, 66);
+      ellipse(bodyX, bodyY, bodyW, bodyH); // lion's mane
+
+      line(bodyX - bodyH/2.1, bodyY - 1 , bodyX + bodyH/2.1, bodyY + 10);//mane's hairs
+      line(bodyX - bodyH/4.1, bodyY + 50 , bodyX + bodyH/3.7, bodyY + -50);
+      line(bodyX - bodyH/5, bodyY - 54 , bodyX + bodyH/5, bodyY + 55);
+      line(bodyX - bodyH/2.45, bodyY - 33 , bodyX + bodyH/2.5, bodyY + 35);
+      line(bodyX - bodyH/2.45, bodyY + 32 , bodyX + bodyH/2.2, bodyY + -20);
+      line(bodyX - bodyH/21.3, bodyY + 58 , bodyX + bodyH/20.0, bodyY - 59);
+
+
+      fill(240, 209, 36);
+      ellipse(bodyX, bodyY + 5, faceW, 47); // face
+
+      fill(71, 71, 71);
+      ellipse(bodyX + 15, bodyY + 5, eyesW, eyesH); // eyes position
+      ellipse(bodyX - 15, bodyY + 5, eyesW, eyesH);
+
+      eyesH+=0.08;//bug out 
+      eyesW+=0.08;
+      bodyW += 0.08;
+      bodyH += 0.08;
+    
+};
+</body>
+</html>
+
+
